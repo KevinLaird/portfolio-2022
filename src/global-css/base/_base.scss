@@ -9,8 +9,19 @@
 html {
   font-size: 62.5%; //1rem = 10px
 }
+
 body {
   box-sizing: border-box;
   position: relative;
   font-size: 1.6em;
+  background-color: $color-primary;
+  color: #fff;
+  padding: 0 20rem;
+}
+
+a,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+  font-family: inherit;
 }
