@@ -1,0 +1,33 @@
+@import '../../global-css/abstracts/variables';
+
+.Navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-primary;
+
+  & > * {
+    margin: 3rem 20rem;
+  }
+}
+
+.logo {
+  margin-right: 1.5rem;
+  width: 2rem;
+  &Box {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.items {
+  & > * {
+    list-style: none;
+    & a {
+      font-weight: 300;
+    }
+  }
+}
