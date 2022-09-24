@@ -25,3 +25,19 @@ a:visited {
   text-decoration: none;
   font-family: inherit;
 }
+
+a:hover {
+  cursor: pointer;
+  filter: brightness(0.8);
+}
+
+button {
+  font-family: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  &:hover {
+    cursor: pointer;
+    filter: brightness(0.8);
+  }
+}
