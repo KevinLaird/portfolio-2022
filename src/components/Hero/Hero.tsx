@@ -1,4 +1,5 @@
 import React from 'react';
+import ProjectFilter from '../Project/ProjectFilter';
 import styles from './Hero.module.scss';
 
 const Hero = (): JSX.Element => (
@@ -12,7 +13,6 @@ const Hero = (): JSX.Element => (
         <a href="localhost.com">LinkedIn</a>
       </li>
     </ul>
-    <hr className={styles.line} />
   </div>
 );
 
