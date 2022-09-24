@@ -1,0 +1,24 @@
+.verticalLine {
+  background: linear-gradient(#fff, #fff) no-repeat center/2px 100%;
+  margin-bottom: 4rem;
+  height: 25rem;
+}
+
+.filter {
+  &Container {
+    height: 25rem;
+    transform: translateY(-15rem);
+  }
+
+  &Options {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+
+    & > * {
+      padding: 0.6rem 1rem;
+    }
+  }
+}
