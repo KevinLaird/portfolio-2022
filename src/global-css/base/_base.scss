@@ -17,6 +17,13 @@ body {
   background-color: $color-primary;
   color: #fff;
   padding: 0 20rem;
+
+  @include respond(lg) {
+    padding: 0 10rem;
+  }
+  @include respond(sm) {
+    padding: 0 2.5rem;
+  }
 }
 
 a,
