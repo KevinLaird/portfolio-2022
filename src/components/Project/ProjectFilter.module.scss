@@ -19,6 +19,16 @@
 
     & > * {
       padding: 0.6rem 1rem;
+      font-weight: 300;
+      color: #9da9ae;
+      &:hover {
+        color: #fff;
+      }
     }
   }
+}
+
+.active {
+  font-weight: 700;
+  color: #fff;
 }
