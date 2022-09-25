@@ -1,0 +1,37 @@
+@import '../../global-css/abstracts/mixins';
+
+.container {
+  display: flex;
+  gap: 4rem;
+  width: 100%;
+
+  @include respond(md) {
+    flex-direction: column;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  min-width: 30rem;
+  gap: 2rem;
+}
+
+.image {
+  max-width: 50%;
+  height: auto;
+  object-fit: cover;
+
+  @include respond(md) {
+    max-width: 100%;
+  }
+}
+
+.cta {
+  display: flex;
+  gap: 0.8rem;
+  transition: all 0.2s;
+  &:hover {
+    gap: 1.1rem;
+  }
+}
