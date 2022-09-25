@@ -5,8 +5,8 @@ import styles from './Hero.module.scss';
 const Hero = (): JSX.Element => (
   <div className={styles.Hero}>
     <div className={styles.titleBox}>
-      <p className={styles.subtitle}>Lorem, ipsum dolor.</p>
-      <h1 className={styles.title}>Lorem, ipsum dolor sit amet consectetur</h1>
+      <h4>Lorem, ipsum dolor.</h4>
+      <h1>Lorem, ipsum dolor sit amet consectetur</h1>
     </div>
     <ul className={styles.contact}>
       <li>
