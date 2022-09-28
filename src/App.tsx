@@ -2,9 +2,8 @@ import React from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import styles from './App.module.scss';
-import logo from './logo.svg';
 import ProjectFilter from './components/Project/ProjectFilter';
-import Project from './components/Project/Project';
+import Projects from './components/Project/Projects';
 
 const App = (): JSX.Element => (
   <>
@@ -13,7 +12,7 @@ const App = (): JSX.Element => (
     </header>
     <Hero />
     <ProjectFilter />
-    <Project />
+    <Projects />
   </>
 );
 
