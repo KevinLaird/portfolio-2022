@@ -1,19 +1,35 @@
 import React from 'react';
 import styles from './Project.module.scss';
 
-const Project = (): JSX.Element => (
+interface ProjectPropTypes {
+  title: string;
+  subtitle: string;
+  summary: string;
+  link: string;
+  src: string;
+  alt: string;
+}
+
+const Project: React.FC<ProjectPropTypes> = ({
+  title,
+  subtitle,
+  summary,
+  link,
+  src,
+  alt,
+}): JSX.Element => (
   <div className={styles.container}>
     <div className={styles.content}>
       <div>
-        <h1>Title</h1>
-        <h3>Subtitle</h3>
+        <h1>{title}</h1>
+        <h3>{subtitle}</h3>
+        <p className={styles.summary}>
+          {summary}
+        </p>
       </div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
-        explicabo.
-      </p>
-      <a className={styles.cta} href="https://kevinlaird.me">
-        About
+
+      <a className={styles.cta} href={link}>
+        Read More
         <img
           src="./assets/icons/caret_right.svg"
           alt="Caret pointing right"
@@ -22,8 +38,8 @@ const Project = (): JSX.Element => (
     </div>
     <img
       className={styles.image}
-      src="./assets/introspect/splash.png"
-      alt="alt"
+      src={src}
+      alt={alt}
     />
   </div>
 );

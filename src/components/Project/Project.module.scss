@@ -4,6 +4,7 @@
   display: flex;
   gap: 4rem;
   width: 100%;
+  justify-content: space-between;
 
   @include respond(md) {
     flex-direction: column;
@@ -17,13 +18,17 @@
   gap: 2rem;
 }
 
+.summary {
+  margin-top: 3rem;
+  color: rgb(214, 214, 214);
+}
+
 .image {
-  max-width: 50%;
-  height: auto;
+  width: 40vw;
   object-fit: cover;
 
   @include respond(md) {
-    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -31,6 +36,9 @@
   display: flex;
   gap: 0.8rem;
   transition: all 0.2s;
+  padding: 2rem 0;
+  width: fit-content;
+
   &:hover {
     gap: 1.1rem;
   }
