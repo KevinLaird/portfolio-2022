@@ -26,9 +26,12 @@ const PROJECT_DATA = [
   {
     id: 1,
     title: 'IntroSpect',
-    subtitle: 'Subtitle',
-    summary: `Apps 
-    project`,
+    subtitle: 'UI/UX Design - 6 months',
+    summary: `Produced an Augmented Reality 
+    application in Angular.js using the MUSE Headset API to 
+    visualize real-time data that will help with meditation. 
+    Presented to 100s of people and 
+    received a satisfaction rating of 94.3%.`,
     link: 'https://kevinlaird.me',
     src: './assets/introspect/splash.png',
     alt: 'IntroSpect Splash Image',
