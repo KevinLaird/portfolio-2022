@@ -32,7 +32,7 @@ const ProjectFilter: React.FC<ProjectFilterPropTypes> = (
           && filterData.map((option) => (
             <button
               type="button"
-              key={`filter-${option.id}`}
+              key={option.id}
               value={option.id}
               className={`${option.id === activeFilterId ? styles.active : ''}`}
               onClick={handleFilterUpdate}
