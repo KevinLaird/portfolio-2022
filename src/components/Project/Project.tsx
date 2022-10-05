@@ -30,10 +30,6 @@ const Project: React.FC<ProjectPropTypes> = ({
 
       <a className={styles.cta} href={link}>
         Read More
-        <img
-          src="./assets/icons/caret_right.svg"
-          alt="Caret pointing right"
-        />
       </a>
     </div>
     <img
