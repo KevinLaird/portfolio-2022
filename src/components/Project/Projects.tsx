@@ -76,7 +76,7 @@ const Projects = (): JSX.Element => {
     );
 
   return (
-    <>
+    <section>
       <ProjectFilter
         activeFilterId={activeFilterId}
         setActiveFilterId={setActiveFilterId}
@@ -87,7 +87,7 @@ const Projects = (): JSX.Element => {
           projectFilter.length !== 0
           && projectFilter.map((project) => (
             <Project
-              key={`project-${project.id}`}
+              key={project.id}
               title={project.title}
               subtitle={project.subtitle}
               summary={project.summary}
@@ -98,7 +98,7 @@ const Projects = (): JSX.Element => {
           ))
         }
       </div>
-    </>
+    </section>
   );
 };
 
