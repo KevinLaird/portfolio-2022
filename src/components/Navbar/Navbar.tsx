@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Navbar.module.scss';
+import NavbarFooter from './NavbarFooter';
 
 const NAVBAR_ITEMS: any[] = [
   {
@@ -10,20 +11,23 @@ const NAVBAR_ITEMS: any[] = [
 ];
 
 const Navbar = (): JSX.Element => (
-  <nav className={styles.Navbar}>
-    <div className={styles.logoBox}>
-      <img className={styles.logo} src="./assets/logo.png" alt="logo" />
-      Kevin Laird
-    </div>
-    <ul className={styles.items}>
-      {NAVBAR_ITEMS.length !== 0
-        && NAVBAR_ITEMS.map((item) => (
-          <li key={item.id}>
-            <a href={item.link}>{item.name}</a>
-          </li>
-        ))}
-    </ul>
-  </nav>
+  <div className={styles.container}>
+    <nav className={styles.navContainer}>
+      <a href="https://kevinlaird.me" className={styles.logoBox}>
+        <img className={styles.logo} src="./assets/logo.png" alt="logo" />
+        Kevin Laird
+      </a>
+      <ul className={styles.items}>
+        {NAVBAR_ITEMS.length !== 0
+          && NAVBAR_ITEMS.map((item) => (
+            <li key={item.id}>
+              <a href={item.link}>{item.name}</a>
+            </li>
+          ))}
+      </ul>
+    </nav>
+    <NavbarFooter />
+  </div>
 );
 
 export default Navbar;

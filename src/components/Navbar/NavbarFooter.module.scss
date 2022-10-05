@@ -1,0 +1,29 @@
+@import '../../global-css/abstracts/variables';
+@import '../../global-css/abstracts/mixins';
+
+.container {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  gap: 2rem;
+
+  background-color: $color-primary;
+  margin: 2rem 19rem;
+  padding: 1rem;
+  font-weight: 300;
+  z-index: 1000;
+
+  @include respond(xl) {
+    margin: 2rem 24rem;
+  }
+
+  @include respond(lg) {
+    margin: 2rem 4rem;
+  }
+
+  @include respond(md) {
+    margin: 2rem 1.5rem;
+  }
+}

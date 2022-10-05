@@ -1,7 +1,11 @@
 @import '../../global-css/abstracts/variables';
 @import '../../global-css/abstracts/mixins';
 
-.Navbar {
+.container {
+  position: relative;
+}
+
+.navContainer {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,18 +15,18 @@
   background-color: $color-primary;
 
   & > * {
-    margin: 3rem 20rem;
+    margin: 3rem 20rem 1rem;
 
     @include respond(xl) {
-      margin: 3rem 25rem;
+      margin: 3rem 25rem 1rem;
     }
 
     @include respond(lg) {
-      margin: 3rem 5rem;
+      margin: 3rem 5rem 1rem;
     }
 
     @include respond(md) {
-      margin: 3rem 2.5rem;
+      margin: 3rem 2.5rem 1rem;
     }
   }
 }
