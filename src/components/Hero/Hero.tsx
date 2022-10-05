@@ -7,11 +7,6 @@ const Hero = (): JSX.Element => (
       <h4>Lorem, ipsum dolor.</h4>
       <h1>Lorem, ipsum dolor sit amet consectetur</h1>
     </div>
-    <ul className={styles.contact}>
-      <li>
-        <a href="localhost.com">LinkedIn</a>
-      </li>
-    </ul>
   </div>
 );
 
