@@ -1,7 +1,12 @@
+@import '../../global-css/abstracts/mixins';
+
 .container {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10rem;
   margin-bottom: 10rem;
+  @include respond(xs) {
+    gap: 7.5rem;
+  }
 }
