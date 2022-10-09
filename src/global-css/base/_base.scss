@@ -15,18 +15,19 @@ body {
   position: relative;
   font-size: 1.6em;
   background-color: $color-primary;
+  min-height: 100vh;
   color: #fff;
-  margin: 0 20rem;
+  margin: 8rem 20rem;
 
   @include respond(xl) {
-    margin: 0 25rem;
+    margin: 8rem 25rem;
   }
 
   @include respond(lg) {
-    margin: 0 5rem;
+    margin: 8rem 5rem;
   }
   @include respond(sm) {
-    margin: 0 2.5rem;
+    margin: 8rem 2.5rem;
   }
 }
 
