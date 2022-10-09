@@ -10,11 +10,12 @@
   gap: 2rem;
 
   background-color: $color-primary;
-  margin: 2rem 19rem;
+
   padding: 1rem;
   font-weight: 300;
   z-index: 1000;
 
+  margin: 2rem 19rem;
   @include respond(xl) {
     margin: 2rem 24rem;
   }

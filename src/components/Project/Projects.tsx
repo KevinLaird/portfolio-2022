@@ -32,7 +32,6 @@ const PROJECT_DATA = [
     visualize real-time data that will help with meditation. 
     Presented to 100s of people and 
     received a satisfaction rating of 94.3%.`,
-    link: 'https://kevinlaird.me',
     src: './assets/introspect/splash.png',
     alt: 'IntroSpect Splash Image',
     tag: 4,
@@ -42,7 +41,6 @@ const PROJECT_DATA = [
     title: 'IntroSpect',
     subtitle: 'Subtitle',
     summary: 'Games project',
-    link: 'https://kevinlaird.me',
     src: './assets/introspect/splash.png',
     alt: 'IntroSpect Splash Image',
     tag: 2,
@@ -52,7 +50,6 @@ const PROJECT_DATA = [
     title: 'IntroSpect',
     subtitle: 'Subtitle',
     summary: 'websites project',
-    link: 'https://kevinlaird.me',
     src: './assets/introspect/splash.png',
     alt: 'IntroSpect Splash Image',
     tag: 3,
@@ -76,7 +73,7 @@ const Projects = (): JSX.Element => {
     );
 
   return (
-    <section>
+    <section id="projects">
       <ProjectFilter
         activeFilterId={activeFilterId}
         setActiveFilterId={setActiveFilterId}
@@ -91,7 +88,6 @@ const Projects = (): JSX.Element => {
               title={project.title}
               subtitle={project.subtitle}
               summary={project.summary}
-              link={project.link}
               src={project.src}
               alt={project.alt}
             />

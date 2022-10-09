@@ -1,11 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Project.module.scss';
 
 interface ProjectPropTypes {
   title: string;
   subtitle: string;
   summary: string;
-  link: string;
   src: string;
   alt: string;
 }
@@ -14,7 +14,6 @@ const Project: React.FC<ProjectPropTypes> = ({
   title,
   subtitle,
   summary,
-  link,
   src,
   alt,
 }): JSX.Element => (
@@ -28,9 +27,9 @@ const Project: React.FC<ProjectPropTypes> = ({
         </p>
       </div>
 
-      <a className={styles.cta} href={link}>
+      <Link className={styles.cta} to={`/projects/${title}`}>
         Read More
-      </a>
+      </Link>
     </div>
     <img
       className={styles.image}

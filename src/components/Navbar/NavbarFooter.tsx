@@ -5,17 +5,18 @@ const DUMMY_CONTACT_DATA = [
   {
     id: 1,
     name: 'LinkedIn',
-    href: 'linked.in',
+    href: 'https://www.linkedin.com/in/kevinjohnlaird/',
   },
   {
     id: 2,
-    name: 'Email',
-    href: 'linked.in',
+    name: 'GitHub',
+    href: 'https://github.com/KevinLaird',
+
   },
   {
     id: 3,
-    name: 'GitHub',
-    href: 'linked.in',
+    name: 'Email',
+    href: 'mailto:contact@kevinlaird.me',
   },
 ];
 
@@ -26,6 +27,8 @@ const NavbarFooter = (): JSX.Element => (
         <a
           key={link.id}
           href={link.href}
+          target="_blank"
+          rel="noreferrer"
         >
           {link.name}
         </a>
