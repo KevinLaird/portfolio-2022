@@ -4,12 +4,12 @@ import Projects from '../components/Project/Projects';
 
 const Home = (): JSX.Element => (
   <>
-    <main className={styles.Hero}>
-      <div className={styles.titleBox}>
+    <article className={styles.Hero}>
+      <header className={styles.titleBox}>
         <h4>Lorem, ipsum dolor.</h4>
         <h1>Lorem, ipsum dolor sit amet consectetur</h1>
-      </div>
-    </main>
+      </header>
+    </article>
     <Projects />
   </>
 );

@@ -67,19 +67,20 @@ const Projects = (): JSX.Element => {
     defaultActiveElement ? defaultActiveElement.id : 1,
   );
 
+  // if the active filter is All, don't filter. If it isn't, begin filtering
   const projectFilter = (activeFilterId === 1) ? PROJECT_DATA
     : PROJECT_DATA.filter(
       (project) => project.tag === activeFilterId,
     );
 
   return (
-    <section id="projects">
+    <article id="projects">
       <ProjectFilter
         activeFilterId={activeFilterId}
         setActiveFilterId={setActiveFilterId}
         filterData={FILTER_DATA}
       />
-      <div className={styles.container}>
+      <section className={styles.container}>
         {
           projectFilter.length !== 0
           && projectFilter.map((project) => (
@@ -93,8 +94,8 @@ const Projects = (): JSX.Element => {
             />
           ))
         }
-      </div>
-    </section>
+      </section>
+    </article>
   );
 };
 

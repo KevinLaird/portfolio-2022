@@ -21,19 +21,21 @@ const DUMMY_CONTACT_DATA = [
 ];
 
 const NavbarFooter = (): JSX.Element => (
-  <div className={styles.container}>
+  <footer className={styles.container}>
     {DUMMY_CONTACT_DATA.length !== 0
       && DUMMY_CONTACT_DATA.map((link) => (
-        <a
-          key={link.id}
-          href={link.href}
-          target="_blank"
-          rel="noreferrer"
-        >
-          {link.name}
-        </a>
+        <address>
+          <a
+            key={link.id}
+            href={link.href}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {link.name}
+          </a>
+        </address>
       ))}
-  </div>
+  </footer>
 );
 
 export default NavbarFooter;

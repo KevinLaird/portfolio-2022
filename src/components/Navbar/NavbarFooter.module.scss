@@ -27,4 +27,8 @@
   @include respond(md) {
     margin: 2rem 1.5rem;
   }
+
+  & address {
+    font-style: normal;
+  }
 }

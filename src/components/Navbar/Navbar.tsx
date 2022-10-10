@@ -13,7 +13,7 @@ const NAVBAR_ITEMS: any[] = [
 ];
 
 const Navbar = (): JSX.Element => (
-  <div className={styles.container}>
+  <header className={styles.container}>
     <nav className={styles.navContainer}>
       <HashLink to="/#projects" className={styles.logoBox}>
         <img className={styles.logo} src="./assets/logo.png" alt="logo" />
@@ -29,7 +29,7 @@ const Navbar = (): JSX.Element => (
       </ul>
     </nav>
     <NavbarFooter />
-  </div>
+  </header>
 );
 
 export default Navbar;

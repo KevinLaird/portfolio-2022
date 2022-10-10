@@ -20,8 +20,10 @@ const Project: React.FC<ProjectPropTypes> = ({
   <div className={styles.container}>
     <div className={styles.content}>
       <div>
-        <h1>{title}</h1>
-        <h3>{subtitle}</h3>
+        <header>
+          <h1>{title}</h1>
+          <h3>{subtitle}</h3>
+        </header>
         <p className={styles.summary}>
           {summary}
         </p>

@@ -25,7 +25,7 @@ const ProjectFilter: React.FC<ProjectFilterPropTypes> = (
   };
 
   return (
-    <div className={styles.filterContainer}>
+    <header className={styles.filterContainer}>
       <div className={styles.verticalLine} />
       <div className={styles.filterOptions}>
         {filterData.length !== 0
@@ -41,7 +41,7 @@ const ProjectFilter: React.FC<ProjectFilterPropTypes> = (
             </button>
           ))}
       </div>
-    </div>
+    </header>
   );
 };
 

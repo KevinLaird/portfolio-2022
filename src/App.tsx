@@ -8,13 +8,13 @@ import Navbar from './components/Navbar/Navbar';
 
 const App = (): JSX.Element => (
   <>
-    <header className={styles.header}>
-      <Navbar />
-    </header>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-    </Routes>
+    <Navbar />
+    <main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </main>
   </>
 );
 
