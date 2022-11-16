@@ -1,11 +1,24 @@
 import React from 'react';
-import Tabs from '../components/UI/Tabs';
+import ContentTabs from '../components/UI/Tabs/ContentTabs';
+
+const DUMMY_JSX: any = [
+  {
+    id: 't1',
+    title: 'Title 1',
+    content: 'Content',
+  },
+  {
+    id: 't2',
+    title: 'Title 2',
+    content: 'Content',
+  },
+];
 
 const About = (): JSX.Element => (
   <>
     <h1>hello world</h1>
     About
-    <Tabs />
+    <ContentTabs content={DUMMY_JSX} />
   </>
 );
 
