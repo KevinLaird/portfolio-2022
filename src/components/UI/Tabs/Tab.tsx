@@ -4,8 +4,8 @@ import styles from './Tab.module.scss';
 interface TabPropTypes {
   activeTab: string;
   text?: string;
-  onClick: any;
-  value: any;
+  onClick: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>,) => void;
+  value: string;
 }
 
 const Tab: React.FC<TabPropTypes> = (

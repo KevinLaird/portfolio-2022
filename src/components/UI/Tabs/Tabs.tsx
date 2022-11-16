@@ -23,13 +23,15 @@ const Tabs: React.FC<TabsPropTypes> = (
       const child = children[i];
       const { key } = child;
 
-      // Set initial active tab
-      tabs.push(<Tab
-        key={key}
-        value={key}
-        activeTab={activeTab}
-        onClick={toggleStateHandler}
-      />);
+      if (key && typeof key === 'string') {
+        // Set initial active tab
+        tabs.push(<Tab
+          key={key}
+          value={key}
+          activeTab={activeTab}
+          onClick={toggleStateHandler}
+        />);
+      }
     }
   }
 

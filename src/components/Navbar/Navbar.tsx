@@ -4,7 +4,7 @@ import { HashLink } from 'react-router-hash-link';
 import styles from './Navbar.module.scss';
 import NavbarFooter from './NavbarFooter';
 
-const NAVBAR_ITEMS: any[] = [
+const NAVBAR_ITEMS: { id: string, name: string, link: string; }[] = [
   {
     id: '01',
     name: 'About',

@@ -1,7 +1,7 @@
 import React from 'react';
 import ContentTabs from '../components/UI/Tabs/ContentTabs';
 
-const DUMMY_JSX: any = [
+const DUMMY_JSX: { id: string, title: string, content: string; }[] = [
   {
     id: 't1',
     title: 'Title 1',
