@@ -18,6 +18,11 @@ const Project: React.FC<ProjectPropTypes> = ({
   alt,
 }): JSX.Element => (
   <div className={styles.container}>
+    <img
+      className={styles.image}
+      src={src}
+      alt={alt}
+    />
     <div className={styles.content}>
       <div>
         <header>
@@ -33,11 +38,7 @@ const Project: React.FC<ProjectPropTypes> = ({
         Read More
       </Link>
     </div>
-    <img
-      className={styles.image}
-      src={src}
-      alt={alt}
-    />
+
   </div>
 );
 
