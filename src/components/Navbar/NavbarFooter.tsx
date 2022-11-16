@@ -24,9 +24,8 @@ const NavbarFooter = (): JSX.Element => (
   <footer className={styles.container}>
     {DUMMY_CONTACT_DATA.length !== 0
       && DUMMY_CONTACT_DATA.map((link) => (
-        <address>
+        <address key={link.id}>
           <a
-            key={link.id}
             href={link.href}
             target="_blank"
             rel="noreferrer"
