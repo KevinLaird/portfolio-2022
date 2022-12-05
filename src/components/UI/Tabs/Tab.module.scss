@@ -1,8 +1,12 @@
+@import '../../../global-css/base/animations';
+
 .tab {
   width: 100%;
   background-color: #d9d9d9;
   font-size: 0.6rem;
+  padding: 3px;
   color: transparent;
+  animation: pulse 2s infinite;
   &Container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
@@ -14,6 +18,20 @@
 
   &.active {
     background-color: #127cc4;
-    padding: 3px;
+    padding: 5px;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+
+  70% {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
   }
 }
