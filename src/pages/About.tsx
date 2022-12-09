@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { RxCaretRight } from 'react-icons/rx';
 import styles from './About.module.scss';
 
 import ContentTabs from '../components/UI/Tabs/ContentTabs';
+import Testimonial from '../components/UI/Testimonials/Testimonial';
 
 const DUMMY_JSX: { id: string, title: string, content: string; }[] = [
   {
@@ -78,10 +80,16 @@ const About = (): JSX.Element => {
           </div>
         </div>
       </div>
-      <button type="button" className={styles.resumeDownload}>
-        Download
+      <Link
+        to="./assets/resume.pdf"
+        target="_blank"
+        download
+        className={styles.resumeDownload}
+      >
+        Download Resume
         <RxCaretRight size={28} />
-      </button>
+      </Link>
+      {/* <button type="button"  /> */}
     </>
   );
 
@@ -117,7 +125,7 @@ const About = (): JSX.Element => {
           {tabSelect === 0 ? bio : resume}
         </div>
       </div>
-      <ContentTabs content={DUMMY_JSX} />
+      <Testimonial />
     </>
   );
 };

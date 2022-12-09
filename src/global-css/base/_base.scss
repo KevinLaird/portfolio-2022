@@ -3,7 +3,7 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
@@ -56,4 +56,8 @@ button {
     cursor: pointer;
     filter: brightness(0.8);
   }
+}
+
+p {
+  margin-bottom: 1rem;
 }

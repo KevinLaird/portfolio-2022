@@ -1,0 +1,122 @@
+.container {
+  background-color: #d6d8d9;
+  color: #0e1011;
+  padding: 4rem;
+  position: relative;
+  min-height: 45rem;
+  display: flex;
+  gap: 6.5rem;
+}
+
+.profile {
+  height: 55rem;
+  width: inherit;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  &Container {
+    width: 25rem;
+    flex-shrink: 0;
+    position: inherit;
+  }
+}
+
+.slide {
+  height: 35rem;
+  width: 12rem;
+  flex-shrink: 0;
+  object-fit: cover;
+
+  &Container {
+    position: relative;
+    height: 35rem;
+    width: 12rem;
+
+    &::before {
+      transition: all 0.2s;
+      content: '';
+      height: inherit;
+      width: inherit;
+      position: absolute;
+      background-color: rgba(#1176bb, 50%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+      cursor: pointer;
+      &::before {
+        background-color: rgba(#1176bb, 75%);
+      }
+    }
+  }
+
+  &Left {
+    margin-right: 3rem;
+  }
+  &Right {
+    margin-left: 3rem;
+  }
+}
+
+.slides {
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  line-height: normal;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 8rem;
+  & > li {
+    list-style-type: none;
+    position: relative;
+    height: 8rem;
+    width: 8rem;
+
+    &::before {
+      content: '';
+      transition: all 0.2s;
+      height: inherit;
+      width: inherit;
+      border-radius: 50px;
+      position: absolute;
+      background-color: rgba(#1176bb, 50%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+      cursor: pointer;
+      &::before {
+        background-color: rgba(#1176bb, 75%);
+      }
+    }
+
+    & img {
+      height: inherit;
+      width: inherit;
+      border-radius: 50px;
+    }
+  }
+
+  & .active {
+    &::before {
+      background-color: transparent;
+    }
+    &:hover {
+      cursor: default;
+      &::before {
+        background-color: transparent;
+      }
+    }
+  }
+}
