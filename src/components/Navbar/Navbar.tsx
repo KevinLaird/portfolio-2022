@@ -4,20 +4,21 @@ import { HashLink } from 'react-router-hash-link';
 import styles from './Navbar.module.scss';
 import NavbarFooter from './NavbarFooter';
 
-const NAVBAR_ITEMS: { id: string, name: string, link: string; hashlink: boolean; }[] = [
-  {
-    id: '01',
-    name: 'About',
-    link: '/about',
-    hashlink: false,
-  },
-  {
-    id: '02',
-    name: 'Projects',
-    link: '/#projects',
-    hashlink: true,
-  },
-];
+const NAVBAR_ITEMS:
+  { id: string, name: string, link: string; hashlink: boolean; }[] = [
+    {
+      id: '01',
+      name: 'About',
+      link: '/about',
+      hashlink: false,
+    },
+    {
+      id: '02',
+      name: 'Projects',
+      link: '/#projects',
+      hashlink: true,
+    },
+  ];
 
 const Navbar = (): JSX.Element => (
   <header className={styles.container}>
