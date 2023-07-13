@@ -42,6 +42,8 @@
 }
 
 .items {
+  display: flex;
+  gap: 3rem;
   & > * {
     list-style: none;
     & a {
