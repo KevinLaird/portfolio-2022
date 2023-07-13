@@ -53,8 +53,16 @@ const About = (): JSX.Element => {
   const bio = (
     <div className={styles.textContent}>
       <h2>Lorem, ipsum.</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis alias assumenda numquam consectetur veniam accusamus.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis neque praesentium mollitia temporibus officia.</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Officiis alias assumenda numquam consectetur veniam accusamus.
+
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Odit nobis neque praesentium mollitia temporibus officia.
+
+      </p>
     </div>
   );
 
