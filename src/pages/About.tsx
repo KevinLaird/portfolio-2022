@@ -3,41 +3,40 @@ import { Link } from 'react-router-dom';
 import { RxCaretRight } from 'react-icons/rx';
 import styles from './About.module.scss';
 
-import ContentTabs from '../components/UI/Tabs/ContentTabs';
 import Testimonial from '../components/UI/Testimonials/Testimonial';
 
-const DUMMY_JSX: { id: string, title: string, content: string; }[] = [
-  {
-    id: 't1',
-    title: 'Title 1',
-    content: 'Content',
-  },
-  {
-    id: 't2',
-    title: 'Title 2',
-    content: 'Content',
-  },
-  {
-    id: 't3',
-    title: 'Title 2',
-    content: 'Content',
-  },
-  {
-    id: 't4',
-    title: 'Title 2',
-    content: 'Content',
-  },
-  {
-    id: 't5',
-    title: 'Title 2',
-    content: 'Content',
-  },
-  {
-    id: 't6',
-    title: 'Title 2',
-    content: 'Content',
-  },
-];
+// const DUMMY_JSX: { id: string, title: string, content: string; }[] = [
+//   {
+//     id: 't1',
+//     title: 'Title 1',
+//     content: 'Content',
+//   },
+//   {
+//     id: 't2',
+//     title: 'Title 2',
+//     content: 'Content',
+//   },
+//   {
+//     id: 't3',
+//     title: 'Title 2',
+//     content: 'Content',
+//   },
+//   {
+//     id: 't4',
+//     title: 'Title 2',
+//     content: 'Content',
+//   },
+//   {
+//     id: 't5',
+//     title: 'Title 2',
+//     content: 'Content',
+//   },
+//   {
+//     id: 't6',
+//     title: 'Title 2',
+//     content: 'Content',
+//   },
+// ];
 
 const About = (): JSX.Element => {
   const [tabSelect, setTabSelect] = useState(0);
@@ -97,7 +96,6 @@ const About = (): JSX.Element => {
         Download Resume
         <RxCaretRight size={28} />
       </Link>
-      {/* <button type="button"  /> */}
     </>
   );
 
