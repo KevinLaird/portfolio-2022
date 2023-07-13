@@ -1,0 +1,27 @@
+.container {
+  background-color: #d6d8d9;
+  color: #0e1011;
+  padding: 4rem;
+  position: relative;
+  min-height: 45rem;
+  display: flex;
+  gap: 6.5rem;
+}
+
+.profile {
+  height: 55rem;
+  width: inherit;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  &Container {
+    width: 25rem;
+    flex-shrink: 0;
+    position: inherit;
+  }
+}
+
+.content {
+  line-height: normal;
+}
