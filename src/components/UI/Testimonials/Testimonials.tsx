@@ -1,6 +1,8 @@
 import React from 'react';
-import styles from './Testimonial.module.scss';
+import styles from './Testimonials.module.scss';
 import TestimonialCard from './TestimonialCard';
+import TestimonialSlider from './TestimonialSlider';
+import TestimonialBubbleNav from './TestimonialBubbleNav';
 
 const DUMMY_JSON = {
   id: '01',
@@ -25,48 +27,55 @@ isn't afraid to advocate for a position he strongly believes in.
 valuable addition to any company or project he contributes to.`,
 };
 
-const Testimonial = (): JSX.Element => (
+const DUMMY_BUBBLES_JSON = [
+  {
+    src: './assets/testimonial/audrena.jpg',
+    active: false,
+    alt: 'nav bubble audrena',
+  },
+  {
+    src: './assets/testimonial/aviva.png',
+    active: true,
+    alt: 'nav bubble audrena',
+  },
+  {
+    src: './assets/testimonial/wanda.jpg',
+    active: false,
+    alt: 'nav bubble',
+  },
+  {
+    src: './assets/testimonial/tanzey.png',
+    active: false,
+    alt: 'nav bubble',
+  },
+];
+
+const Testimonials = (): JSX.Element => (
 
   <div>
     <div className={styles.slides}>
       <div className={`${styles.slideContainer} ${styles.slideLeft}`}>
-        <img
+        <TestimonialSlider
           src="./assets/testimonial/audrena.jpg"
-          alt="Left Slide Testimonial Profile"
-          className={styles.slide}
+          alt="Audrena Profile"
+          left
         />
       </div>
       <TestimonialCard
         id={DUMMY_JSON.id}
         name={DUMMY_JSON.name}
         occupation={DUMMY_JSON.occupation}
-        profileImage={DUMMY_JSON.profileImage}
-        profileAlt={DUMMY_JSON.profileAlt}
+        image={DUMMY_JSON.profileImage}
+        alt={DUMMY_JSON.profileAlt}
         content={DUMMY_JSON.content}
       />
-      <div className={`${styles.slideContainer} ${styles.slideRight}`}>
-        <img
-          src="./assets/testimonial/wanda.jpg"
-          alt="Right Slide Testimonial Profile"
-          className={styles.slide}
-        />
-      </div>
+      <TestimonialSlider
+        src="./assets/testimonial/audrena.jpg"
+        alt="Audrena Profile"
+      />
     </div>
-    <ul className={styles.nav}>
-      <li>
-        <img src="./assets/testimonial/audrena.jpg" alt="nav bubble audrena" />
-      </li>
-      <li className={styles.active}>
-        <img src="./assets/testimonial/aviva.png" alt="nav bubble audrena" />
-      </li>
-      <li>
-        <img src="./assets/testimonial/wanda.jpg" alt="nav bubble audrena" />
-      </li>
-      <li>
-        <img src="./assets/testimonial/tanzey.png" alt="nav bubble audrena" />
-      </li>
-    </ul>
+    <TestimonialBubbleNav bubbles={DUMMY_BUBBLES_JSON} />
   </div>
 );
 
-export default Testimonial;
+export default Testimonials;
