@@ -5,14 +5,14 @@ interface TestimonialCardTypes {
   id: string,
   name: string,
   occupation: string;
-  profileImage: string;
-  profileAlt: string;
+  image: string;
+  alt: string;
   content: string;
 }
 
 const TestimonialCard: React.FC<TestimonialCardTypes> = (
   {
-    id, name, occupation, profileImage, profileAlt, content,
+    id, name, occupation, image, alt, content,
   },
 ): JSX.Element => (
   <div id={id}>
@@ -20,8 +20,8 @@ const TestimonialCard: React.FC<TestimonialCardTypes> = (
       <div className={styles.profileContainer}>
         <img
           className={styles.profile}
-          src={profileImage}
-          alt={profileAlt}
+          src={image}
+          alt={alt}
         />
       </div>
       <div className={styles.content}>
