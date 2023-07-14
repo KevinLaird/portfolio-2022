@@ -1,0 +1,50 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 8rem;
+  & > li {
+    list-style-type: none;
+    position: relative;
+    height: 8rem;
+    width: 8rem;
+
+    &::before {
+      content: '';
+      transition: all 0.2s;
+      height: inherit;
+      width: inherit;
+      border-radius: 50px;
+      position: absolute;
+      background-color: rgba(#1176bb, 50%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+      cursor: pointer;
+      &::before {
+        background-color: rgba(#1176bb, 75%);
+      }
+    }
+
+    & img {
+      height: inherit;
+      width: inherit;
+      border-radius: 50px;
+    }
+  }
+
+  & .active {
+    &::before {
+      background-color: transparent;
+    }
+    &:hover {
+      cursor: default;
+      &::before {
+        background-color: transparent;
+      }
+    }
+  }
+}
